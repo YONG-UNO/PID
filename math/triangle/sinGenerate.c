@@ -15,6 +15,4 @@ float sinGenerate(struct SIN *sinWaveA,float X) {
     return sinWaveA->A * sin( sinWaveA->W * X + sinWaveA->phi );
 }
 
- //struct SIN *sinWaveA
- //sinInit(&sinWaveA,A,W,phi);
- //sinGenerate(&sinWaveA,W,phi);
+

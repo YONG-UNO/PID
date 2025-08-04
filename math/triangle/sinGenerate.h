@@ -17,3 +17,8 @@ void sinInit(struct SIN *sinWaveA,float A,float W,float phi);
 float sinGenerate(struct SIN *sinWaveA,float X);
 
 #endif //SINGENERATE_H
+
+
+//struct SIN sinWaveA 使用栈上的结构体变量,在栈上分配内存
+//sinInit(&sinWaveA,A,W,phi); 再传递地址
+//sinGenerate(&sinWaveA,W,phi);
