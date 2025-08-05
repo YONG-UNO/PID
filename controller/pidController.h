@@ -23,20 +23,3 @@ float pidCalc(struct PID*pid,float setpoint,float current,float dt);
 float setOutLimit(float value,float max,float min);
 #endif //PIDCONTROLLER_H
 
-
-// struct SIN *sinWaveA;
-// sinInit(&sinWaveA,10.0f,0.1f,0.1f);
-//
-// struct PID pid;
-// pidInit(&pid,0.7f,0.0f,0.0f);
-//
-// float current = 0;
-//
-// for (int i = 1;i < 100; i++) {
-//     float target = sinGenerate(&sinWaveA,i  * M_PI_4);
-//     float output = pidCalc(&pid,target,current,0.01);
-//     current += output;
-//
-//     float error = target - current;
-//     printf("target:%.1f ,current:%.1f ,error: %.1f\n",target,current,error);
-// }
