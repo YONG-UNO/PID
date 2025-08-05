@@ -7,21 +7,12 @@
 #include "crossProduct.h"
 
 typedef struct {
-    float x;
-    float y;
-    float z;
-    float norm;
+    float x;         //归一化后的x分量
+    float y;         //归一化后的x分量
+    float z;         //归一化后的x分量
+    float norm;      //模长
 } normal_t;
 
 normal_t normalization (vector3d_t *vect);
-
-//使用方法:
-// vector3d_t vect = {2,2,0};
-// normal_t normal = normalization(&vect);
-//
-// printf("X:%.3f   ",normal.x);
-// printf("Y:%.3f   ",normal.y);
-// printf("Z:%.3f   ",normal.z);
-// printf("norm:%.3f   \n",normal.norm);
 
 #endif //NORMALIZATION_H
