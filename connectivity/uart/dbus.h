@@ -51,6 +51,9 @@ typedef struct {
         uint16_t all;
     }key;
 
+    //侧拨轮
+    uint16_t dialWheel;
+
 }RC_t;
 
 

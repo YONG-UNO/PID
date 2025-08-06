@@ -21,6 +21,8 @@ void rcDecode(void) {
     RC.mouse.press_r = RC_Data[13];
 
     RC.key.all = (uint16_t)RC_Data[14] | (uint16_t)RC_Data[15];
+
+    RC.dialWheel = ((uint16_t)RC_Data[16] | (uint16_t)RC_Data[17] << 8) - 1024;
 }
 
 //补充:错误消息
@@ -32,4 +34,23 @@ void rcDecode(void) {
  *             660         |            660
  *  ch2: -660        660   | ch4: -660        660
  *             -660        |            -660
- *
+ */
+
+// 使用说明
+// 1.在main.c文件中声明全局变量
+//   /* USER CODE BEGIN PV */
+//    RC_t RC;
+//    uint8_t RC_Data[18];
+//
+//    int8_t ch0;
+
+// 2.在dbus.h中extern全局变量
+
+// 3.重定义回调函数
+//   /* USER CODE BEGIN 4 */
+//   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+//       rcDecode();
+//   }
+
+// 4.使用
+//   ch0 = RC.ch0;
