@@ -4,14 +4,12 @@
 
 #include "dbus.h"
 
-RC_t RC;
-uint8_t RC_Data[18];
 
 void rcDecode(void) {
-    RC.ch0 = ((uint16_t)RC_Data[0] | (uint16_t)RC_Data[1] << 8) & 0x07FF;  //移位运算符优先级高于位运算符
-    RC.ch1 = ((uint16_t)RC_Data[1] >> 3 | (uint16_t)RC_Data[2] << 5) & 0x07FF;
-    RC.ch2 = ((uint16_t)RC_Data[2] >> 6 | (uint16_t)RC_Data[3] << 2 | (uint16_t)RC_Data[4] << 10) & 0x0FF;
-    RC.ch3 = ((uint16_t)RC_Data[4] >> 1 | (uint16_t)RC_Data[5] << 7) & 0x077;
+    RC.ch0 = (((uint16_t)RC_Data[0] | (uint16_t)RC_Data[1] << 8) & 0x07FF) - 1024;  //移位运算符优先级高于位运算符
+    RC.ch1 = (((uint16_t)RC_Data[1] >> 3 | (uint16_t)RC_Data[2] << 5) & 0x07FF) - 1024;
+    RC.ch2 = (((uint16_t)RC_Data[2] >> 6 | (uint16_t)RC_Data[3] << 2 | (uint16_t)RC_Data[4] << 10) & 0x07FF) - 1024;
+    RC.ch3 = (((uint16_t)RC_Data[4] >> 1 | (uint16_t)RC_Data[5] << 7) & 0x07FF) - 1024;
 
     RC.s1 = RC_Data[5] >> 6 & 0x03;    //跳过数组[5]的第2,3,4位,s1使用7,8位,s2使用5,6位
     RC.s2 = RC_Data[5] >> 4 & 0x03;    //目的:使mouse.press_x对齐
@@ -27,3 +25,11 @@ void rcDecode(void) {
 
 //补充:错误消息
 //侧拨轮
+
+/* 摇杆映射
+ *            左摇杆:       |           右摇杆:
+ *             ch3:        |            ch1:
+ *             660         |            660
+ *  ch2: -660        660   | ch4: -660        660
+ *             -660        |            -660
+ *

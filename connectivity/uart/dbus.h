@@ -54,6 +54,9 @@ typedef struct {
 }RC_t;
 
 
+extern RC_t RC;
+extern uint8_t RC_Data[18];
+
 void rcDecode(void);
 
 #endif //DBUS_H
