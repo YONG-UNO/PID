@@ -2,28 +2,28 @@
 #include <stdio.h>
 #include <unistd.h>
 
-typedef struct {
-    float kp;
-    float ki;
-    float kd;
-    float setpoint;
-    float current;
-    float error;
-    float last_error;
-    float integrate;
-    float derivative;
-} PID;
-
-//初始化PID参数
-PID pid;
-float time = 0.0f;               //时间变量(用于生成正弦函数)
-const float dt = 0.01f;          //控制周期(10ms);
-const float amplitude = 100.0f;  //sin振幅
-const float frequency = 0.5f;    //正弦波频率(0.5f)
-
-void strcopy(char *str1, char *str2);
-
-int main(void) {
+// typedef struct {
+//     float kp;
+//     float ki;
+//     float kd;
+//     float setpoint;
+//     float current;
+//     float error;
+//     float last_error;
+//     float integrate;
+//     float derivative;
+// } PID;
+//
+// //初始化PID参数
+// PID pid;
+// float time = 0.0f;               //时间变量(用于生成正弦函数)
+// const float dt = 0.01f;          //控制周期(10ms);
+// const float amplitude = 100.0f;  //sin振幅
+// const float frequency = 0.5f;    //正弦波频率(0.5f)
+//
+// void strcopy(char *str1, char *str2);
+//
+// int main(void) {
     // //初始化pid参数
     // pid.kp = 30.0f;               //比例系数(快速响应)
     // pid.ki = 0.1f;                //积分系数(消除静差)
@@ -68,23 +68,61 @@ int main(void) {
     //     usleep(10000);              //单位是微秒,受到系统调度延迟,相当不准确
     //
     // }
-    char str1[] = "mamba out";
-    char str2[] = "";
+//     char str1[] = "mamba out";
+//     char str2[] = "";
+//
+//     strcopy(str1,str2);
+//
+//     printf("o: %s\n",str2);
+//
+//     return 0;
+// }
+//
+// void strcopy(char *str1, char *str2) {
+//     while (*str1 != '\0') {
+//
+//         *str2 = *str1;
+//         str1++;
+//         str2++;
+//     }
+//     *str2 = '\0';
+//
+//
+// }
 
-    strcopy(str1,str2);
+int main(void) {
+    int N,i,j;
 
-    printf("o: %s\n",str2);
+    scanf("%d%d%d",&N,&i,&j);
+
+    for (int k= 1; k <= N; k++)
+        printf("(%d,%d)",i,k);
+    printf("\n");
+
+    for (int k= 1; k <= N; k++)
+        printf("(%d,%d)",k,j);
+    printf("\n");
+
+
+    int init_row = 1;
+    int init_col = j + 1 - i;
+
+    while (init_col <= N) {
+        printf("(%d,%d)",init_row,init_col);
+        init_row++;
+        init_col++;
+    }
+    printf("\n");
+
+    init_row = 4;
+    init_col = j - i;
+
+    while (init_col <= N) {
+        printf("(%d,%d)",init_row,init_col);
+        init_row--;
+        init_col++;
+    }
+    printf("\n");
 
     return 0;
-}
-
-void strcopy(char *str1, char *str2) {
-    while (*str1 != '\0') {
-
-        *str2 = *str1;
-        str1++;
-        str2++;
-    }
-    *str2 = '\0';
-
 }
