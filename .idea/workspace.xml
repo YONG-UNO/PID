@@ -26,7 +26,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="941790c4-0285-4e34-9b37-0ea0159d1fda" name="更改" comment="1" />
+    <list default="true" id="941790c4-0285-4e34-9b37-0ea0159d1fda" name="更改" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +37,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
@@ -198,7 +201,7 @@
       <workItem from="1756400218129" duration="1374000" />
       <workItem from="1759483730497" duration="34000" />
       <workItem from="1759717450273" duration="13000" />
-      <workItem from="1759821515866" duration="177000" />
+      <workItem from="1759821515866" duration="814000" />
     </task>
     <task id="LOCAL-00001" summary="添加read_me文件">
       <option name="closed" value="true" />
@@ -320,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759821592699</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add bsp_CAN(接收验证完成)">
+      <option name="closed" value="true" />
+      <created>1759821982015</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1759821982015</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
