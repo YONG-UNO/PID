@@ -48,12 +48,12 @@
     &quot;assignee&quot;: &quot;YONG-UNO&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/YONG-UNO/PID.git",
-    "accountId": "d93db6ad-cbae-43f7-aecf-4f891117767e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/YONG-UNO/PID.git&quot;,
+    &quot;accountId&quot;: &quot;d93db6ad-cbae-43f7-aecf-4f891117767e&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_HOME_DIR$/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_HOME_DIR$/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h" root0="FORCE_HIGHLIGHTING" />
@@ -200,6 +200,7 @@
       <workItem from="1756400218129" duration="1374000" />
       <workItem from="1759483730497" duration="34000" />
       <workItem from="1759717450273" duration="13000" />
+      <workItem from="1759821515866" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="添加read_me文件">
       <option name="closed" value="true" />
@@ -305,7 +306,23 @@
       <option name="project" value="LOCAL" />
       <updated>1754585008270</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add bsp_CAN(接收验证完成)">
+      <option name="closed" value="true" />
+      <created>1759821543694</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759821543694</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add bsp_CAN(接收验证完成)">
+      <option name="closed" value="true" />
+      <created>1759821592699</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1759821592699</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
