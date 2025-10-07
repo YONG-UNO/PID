@@ -26,7 +26,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="941790c4-0285-4e34-9b37-0ea0159d1fda" name="更改" comment="1">
+    <list default="true" id="941790c4-0285-4e34-9b37-0ea0159d1fda" name="更改" comment="add gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +37,9 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -83,33 +81,35 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ 文件.PID.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ 文件.未命名.executor&quot;: &quot;Run&quot;,
-    &quot;CMake 应用程序.PID.executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.test (1).executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.test.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/29039/Documents/myClion/PID/connectivity/CAN&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ 文件.PID.executor": "Run",
+    "C/C++ 文件.main.c.executor": "Run",
+    "C/C++ 文件.未命名.executor": "Run",
+    "CMake 应用程序.PID.executor": "Run",
+    "LaTeX.test (1).executor": "Run",
+    "LaTeX.test.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/29039/Documents/myClion/PID/connectivity/CAN",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\29039\Documents\myClion\PID\connectivity\CAN" />
@@ -121,9 +121,15 @@
       <recent name="C:\Users\29039\Documents\myClion\PID" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ 文件.PID">
+  <component name="RunManager" selected="C/C++ 文件.main.c">
     <configuration name="PID" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PID" TARGET_NAME="PID" CONFIG_NAME="PID">
       <option name="sourceFile" value="C:\Users\29039\Documents\myClion\PID\main.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PID" TARGET_NAME="main.c" CONFIG_NAME="main.c">
+      <option name="sourceFile" value="main.c" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -174,6 +180,11 @@
       </texify>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ 文件.main.c" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -201,7 +212,7 @@
       <workItem from="1756400218129" duration="1374000" />
       <workItem from="1759483730497" duration="34000" />
       <workItem from="1759717450273" duration="13000" />
-      <workItem from="1759821515866" duration="814000" />
+      <workItem from="1759821515866" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="添加read_me文件">
       <option name="closed" value="true" />
@@ -323,15 +334,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759821592699</updated>
     </task>
-    <task id="LOCAL-00016" summary="add bsp_CAN(接收验证完成)">
+    <task id="LOCAL-00016" summary="modify">
       <option name="closed" value="true" />
-      <created>1759821982015</created>
+      <created>1759822212880</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1759821982015</updated>
+      <updated>1759822212880</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add gitignore">
+      <option name="closed" value="true" />
+      <created>1759822601195</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1759822601195</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +396,9 @@
     <MESSAGE value="删除test\CAN" />
     <MESSAGE value="add bsp_CAN(仅写完接收)" />
     <MESSAGE value="add bsp_CAN(接收验证完成)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bsp_CAN(接收验证完成)" />
+    <MESSAGE value="modify" />
+    <MESSAGE value="add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
