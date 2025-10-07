@@ -86,4 +86,5 @@ void strcopy(char *str1, char *str2) {
         str2++;
     }
     *str2 = '\0';
+
 }
